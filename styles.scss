@@ -1,0 +1,15 @@
+@import "variables";
+
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: $almostWhite;
+}
+
+.contact{
+  background-color: $mediumGray;
+  color:$paleGray;
+  h3{
+    color:$hotPink;
+  }
+}

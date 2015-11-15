@@ -1,0 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #d8dbe2; }
+
+.contact {
+  background-color: #8b8982;
+  color: #c8c8c8; }
+  .contact h3 {
+    color: #d90368; }
