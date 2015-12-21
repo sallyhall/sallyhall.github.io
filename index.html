@@ -3,64 +3,60 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
     <title>Sally Kingston</title>
-    <script type="text/html" id="projectTmpl">
-      <div class="row project">
-        <div class="col-md-4">
-          <img src="<%=image%>" alt="<%=repoName%>" class="img-rounded">
-        </div>
-        <div class="col-md-8">
-          <h3><%=projectName%></h3>
-          <p>
-            <%=description%>
-          </p>
-          <a href="http://github.com/sallykingston/<%=repoName%>" target = "_blank"><i class="fa fa-github"></i></a>
-          <a href="<%=projectURL%>" target = "_blank"><i class="fa fa-desktop"></i></a>
-        </div>
-      </div>
-    </script>
   </head>
   <body>
-    <div class="jumbotron">
-      <div>
-        <h1>Sally Kingston <small>Front End Developer</small></h1>
-      </div>
-    </div>
-    <div class="main container-fluid">
-      <div class="col-md-2 contact">
-        <!-- <h3>Contact Me</h3> -->
-        <div><a href="mailto:sally.a.kingston@gmail.com?Subject=Let's work together" target="_top">sally.a.kingston@gmail.com</a></div>
-        <div><a href="tel:+9193603155">919.360.3155</a></div>
-        <div><a href="http://github.com/sallykingston/" target = "_blank"><i class="fa fa-github"></i></a>
-            <a href="http://twitter.com/sallykingston/" target = "_blank"><i class="fa fa-twitter"></i></a>
-            <a href="http://linkedin.com/in/kingstonsally/" target = "_blank"><i class="fa fa-linkedin"></i></a>
+    <header>
+      <div class="container">
+        <div class="left">
+          sk
         </div>
-
+        <div class="right">
+          <ul>
+            <li><a href="tel:+9193603155"><i class="fa fa-phone smlWidth"></i><span class="lrgWidth">919.360.3155</span></a></li>
+            <li><a href="mailto:sally.a.kingston@gmail.com?Subject=Let's work together" target="_top"><i class="fa fa-envelope smlWidth"></i><span class="lrgWidth">sally.a.kingston@gmail.com</span></a></li>
+            <li><a href="http://github.com/sallykingston/" target = "_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://twitter.com/sallykingston/" target = "_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://linkedin.com/in/kingstonsally/" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
       </div>
-      <div class = "col-md-10 col-md-offset-2 tabs">
+    </header>
+      <section>
+        <ul>
+          <li>
+            <a href="#"><img src="images/chat.png" alt="" />
+            </a>
+          </li><!--
+           --><li>
+          </li><!--
+           --><li>
+            <a href="#"><img src="images/gitHub.png" alt="" />
+            </a>
+          </li><!--
+          --><li>
+          </li><!--
+           --><li>
+            <a href="#"><img src="images/calculator.png" alt="" />
+            </a>
+          </li><!--
+           --><li>
 
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="myTabs" role="tablist">
-          <li role="presentation"><a href="#bio" aria-controls="bio" role="tab" data-toggle="tab">Bio</a></li>
-          <li role="presentation" class="active"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
-          <li role="presentation"><a href="#resume" aria-controls="resume" role="tab" data-toggle="tab">Resume</a></li>
+          </li><!--
+           --><li>
+            <a href="#"><img src="images/chat.png" alt="" />
+            </a>
+          </li><!--
+           --><li>
+
+          </li><!--
+           --><li>
+            <a href="#"><img src="images/gitHub.png" alt="" />
+            </a>
+          </li>
         </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="projects">
-            <h2>My Projects</h2>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="resume">My Resume</div>
-          <div role="tabpanel" class="tab-pane" id="bio">My Bio</div>
-        </div>
-
-      </div>
-    </div>
-    <footer></footer>
-    <script src="bundle.js" charset="utf-8"></script>
+    </section>
   </body>
 </html>

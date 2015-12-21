@@ -6,68 +6,100 @@ body, html{
   height: 100%;
 }
 
-.jumbotron{
-  top: 0px;
-  width: 100%;
-  padding-left:20px;
+header{
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   position: fixed;
-  border-bottom: 3px solid $darkestGray;
-  small{
-    color: $accent;
+  width: 100%;
+  height:75px;
+  top:0;
+  background-color: white;
+  padding: .5rem 0;
+  border-bottom: 1px solid black;
+  .container{
+    width:80%;
+    margin: auto;
+  }
+  ul{
+    padding:0;
+  }
+  li{
+    margin: 10px;
+    list-style-type: none;
+    display: inline-block;
+    a{
+      color:black;
+    }
   }
 }
 
-.contact{
-  position: fixed;
-  border-right: 3px solid $darkestGray;
-  height: 100%;
-  line-height:30px;
-  font-size: 14px;
+.right{
+  vertical-align: top;
+  float: right;
+}
+.left{
+  font-size: 4rem;
+  vertical-align: top;
+  float:left;
+  @media(max-width: $medWidth){
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 }
 
-.main{
-  margin-top: 204px;
-  min-height:100%;
-  overflow: scroll;
-}
-
-.tabs, .contact{
-  margin-bottom: -9999px;
-  padding-bottom: 9999px;
-  padding-top:30px;
-}
-
-.contact:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border-right: 3px solid $darkestGray;
-}
-.jumbotron:after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 3px;
-  left: 0px;
-  right: 0px;
-  bottom: -9px;
-  border-bottom: 3px solid $darkestGray;
-}
-
-img{
-  border: 1px solid $darkestGray;
-  width:300px;
-}
 .fa{
   font-size: 25px;
   margin: 5px;
+  line-height: 0;
 }
-.project{
-  margin: 10px;
-  padding:20px;
-  border: 2px solid $darkestGray;
+
+section{
+  border: 1px solid gray;
+  text-align: center;
+  margin: 100px auto;
+  @media(min-width: $medWidth){
+    width: 3*$medBox;
+  }
+  @media(min-width: $lrgWidth){
+    width: 3*$lrgBox;
+  }
+  width: 100%;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    img{
+      width: 100%;
+      height:100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.smlWidth{
+  @media(min-width: $headerMax){
+    display: none;
+  }
+}
+.lrgWidth{
+  @media(max-width: $headerMax){
+    display:none;
+  }
+}
+section li {
+  vertical-align: top;
+  @media(min-width: $medWidth){
+    width: $medBox;
+    height: $medBox;
+  }
+  @media(min-width: $lrgWidth){
+    width: $lrgBox;
+    height: $lrgBox;
+  }
+  width: 100%;
 }
