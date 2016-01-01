@@ -46,6 +46,9 @@ header{
     font-size: 2rem;
     padding-top: 1rem;
   }
+  @media(max-width: $smlWidth){
+    font-size: 1rem;
+  }
   .tiny{
     font-size:.9rem;
     @media(max-width: $headerMax){
@@ -58,6 +61,10 @@ header{
   font-size: 25px;
   margin: 5px;
   line-height: 0;
+  @media (max-width: $smlWidth){
+    font-size: 16px;
+  }
+
 }
 
 section{
