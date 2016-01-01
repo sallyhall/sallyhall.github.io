@@ -4,11 +4,11 @@ body, html{
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 header{
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   position: fixed;
   width: 100%;
@@ -46,6 +46,9 @@ header{
     font-size: 2rem;
     padding-top: 1rem;
   }
+  .tiny{
+    font-size:.9rem;
+  }
 }
 
 .fa{
@@ -55,7 +58,6 @@ header{
 }
 
 section{
-  border: 1px solid gray;
   text-align: center;
   margin: 100px auto;
   @media(min-width: $medWidth){
@@ -92,6 +94,9 @@ section{
   }
 }
 section li {
+  background-color:gray;
+  outline: 1px dashed white;
+  outline-offset: -10px;
   vertical-align: top;
   @media(min-width: $medWidth){
     width: $medBox;
@@ -102,4 +107,23 @@ section li {
     height: $lrgBox;
   }
   width: 100%;
+  a{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    line-height: 100px;
+    @media(min-width: $medWidth){
+      line-height: $medBox;
+    }
+    @media(min-width: $lrgWidth){
+      line-height: $lrgBox;
+    }
+  }
+}
+.accent{
+  background-color: $darkgray;
+  @media(max-width: $medWidth){
+    display: none;
+   }
 }

@@ -9,10 +9,7 @@ var portfolioPage = {
     portfolioPage.events();
   },
   events: function () {
-    $('#myTabs a').click(function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
+
   },
   styling:  function(){
     _.each(projects, function (project) {

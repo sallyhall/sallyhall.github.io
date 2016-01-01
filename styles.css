@@ -1,11 +1,11 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Roboto', sans-serif; }
 
 header {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   position: fixed;
   width: 100%;
@@ -38,6 +38,8 @@ header {
     .left {
       font-size: 2rem;
       padding-top: 1rem; } }
+  .left .tiny {
+    font-size: .9rem; }
 
 .fa {
   font-size: 25px;
@@ -45,7 +47,6 @@ header {
   line-height: 0; }
 
 section {
-  border: 1px solid gray;
   text-align: center;
   margin: 100px auto;
   width: 100%; }
@@ -76,6 +77,9 @@ section {
     display: none; } }
 
 section li {
+  background-color: gray;
+  outline: 1px dashed white;
+  outline-offset: -10px;
   vertical-align: top;
   width: 100%; }
   @media (min-width: 480px) {
@@ -86,3 +90,21 @@ section li {
     section li {
       width: 225px;
       height: 225px; } }
+  section li a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    line-height: 100px; }
+    @media (min-width: 480px) {
+      section li a {
+        line-height: 150px; } }
+    @media (min-width: 825px) {
+      section li a {
+        line-height: 225px; } }
+
+.accent {
+  background-color: #363537; }
+  @media (max-width: 480px) {
+    .accent {
+      display: none; } }
