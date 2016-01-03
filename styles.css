@@ -2,9 +2,15 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #363537; }
+
+a {
+  text-decoration: none; }
 
 header {
+  color: #363537;
+  z-index: 100;
   font-size: 1rem;
   font-weight: 100;
   position: fixed;
@@ -13,7 +19,7 @@ header {
   top: 0;
   background-color: white;
   padding: .5rem 0;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #363537; }
   header .container {
     width: 80%;
     margin: auto; }
@@ -24,7 +30,7 @@ header {
     list-style-type: none;
     display: inline-block; }
     header li a {
-      color: black; }
+      color: #363537; }
 
 .right {
   vertical-align: top;
@@ -34,6 +40,8 @@ header {
   font-size: 4rem;
   vertical-align: top;
   float: left; }
+  .left a {
+    color: #363537; }
   @media (max-width: 480px) {
     .left {
       font-size: 2rem;
@@ -117,3 +125,42 @@ section li {
   @media (max-width: 480px) {
     .accent {
       display: none; } }
+
+.container {
+  z-index: 1; }
+
+.content {
+  overflow: hidden;
+  width: 60%;
+  margin: 5% 20%; }
+
+.contact {
+  margin-bottom: 20px;
+  text-align: left; }
+  .contact a {
+    text-decoration: none;
+    color: #363537;
+    font-size: 1.5em;
+    margin: 20px; }
+    .contact a:hover {
+      text-decoration: underline; }
+  .contact .intro {
+    margin: 50px auto;
+    padding: 50px; }
+  .contact h1 {
+    font-size: 2em; }
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -150px; }
+
+.subsection {
+  font-weight: 300; }
+  .subsection h1 {
+    margin: 50px;
+    font-size: 2.5rem; }
+  .subsection p {
+    font-size: 1.25rem;
+    text-align: left; }

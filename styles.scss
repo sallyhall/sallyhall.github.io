@@ -5,9 +5,14 @@ body, html{
   padding: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  color:$darkgray;
 }
-
+a{
+  text-decoration: none;
+}
 header{
+  color: $darkgray;
+  z-index:100;
   font-size: 1rem;
   font-weight: 100;
   position: fixed;
@@ -16,7 +21,7 @@ header{
   top:0;
   background-color: white;
   padding: .5rem 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $darkgray;
   .container{
     width:80%;
     margin: auto;
@@ -29,7 +34,7 @@ header{
     list-style-type: none;
     display: inline-block;
     a{
-      color:black;
+      color:$darkgray;
     }
   }
 }
@@ -39,6 +44,9 @@ header{
   float: right;
 }
 .left{
+  a{
+    color:$darkgray;
+  }
   font-size: 4rem;
   vertical-align: top;
   float:left;
@@ -136,4 +144,53 @@ section li {
   @media(max-width: $medWidth){
     display: none;
    }
+}
+.container{
+  z-index:1;
+}
+.content{
+  overflow: hidden;
+  width: 60%;
+  margin: 5% 20%;
+}
+
+.contact{
+  margin-bottom: 20px;
+  text-align: left;
+  a{
+    text-decoration: none;
+    color:$darkgray;
+    font-size: 1.5em;
+    &:hover{
+      text-decoration: underline;
+    }
+    margin: 20px;
+  }
+  .intro{
+    margin: 50px auto;
+    padding: 50px;
+  }
+  h1{
+    font-size: 2em;
+  }
+
+}
+
+.anchor{
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top:-150px;
+}
+
+.subsection{
+  font-weight: 300;
+  h1{
+    margin:50px;
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.25rem;
+    text-align: left;
+  }
 }
