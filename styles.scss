@@ -50,16 +50,16 @@ header{
   font-size: 4rem;
   vertical-align: top;
   float:left;
-  @media(max-width: $medWidth){
+  @media screen and(max-width: $medWidth){
     font-size: 2rem;
     padding-top: 1rem;
   }
-  @media(max-width: $smlWidth){
+  @media screen and(max-width: $smlWidth){
     font-size: 1rem;
   }
   .tiny{
     font-size:.9rem;
-    @media(max-width: $headerMax){
+    @media screen and(max-width: $headerMax){
       display: none;
     }
   }
@@ -69,16 +69,16 @@ header{
   font-size: 25px;
   margin: 5px;
   line-height: 0;
-  @media (max-width: $smlWidth){
+  @media screen and (max-width: $smlWidth){
     font-size: 16px;
   }
 
 }
 .menu{
-  @media(min-width: $medWidth){
+  @media screen and(min-width: $medWidth){
     width: 3*$medBox;
   }
-  @media(min-width: $lrgWidth){
+  @media screen and(min-width: $lrgWidth){
     width: 3*$lrgBox;
   }
 
@@ -104,11 +104,11 @@ section{
     outline: 1px dashed white;
     outline-offset: -10px;
     vertical-align: top;
-    @media(min-width: $medWidth){
+    @media screen and(min-width: $medWidth){
       width: $medBox;
       height: $medBox;
     }
-    @media(min-width: $lrgWidth){
+    @media screen and(min-width: $lrgWidth){
       width: $lrgBox;
       height: $lrgBox;
     }
@@ -119,10 +119,10 @@ section{
       font-weight: 100;
       color: white;
       line-height: 100px;
-      @media(min-width: $medWidth){
+      @media screen and(min-width: $medWidth){
         line-height: $medBox;
       }
-      @media(min-width: $lrgWidth){
+      @media screen and(min-width: $lrgWidth){
         line-height: $lrgBox;
       }
     }
@@ -130,19 +130,19 @@ section{
 }
 
 .smlWidth{
-  @media(min-width: $headerMax){
+  @media screen and(min-width: $headerMax){
     display: none;
   }
 }
 .lrgWidth{
-  @media(max-width: $headerMax){
+  @media screen and(max-width: $headerMax){
     display:none;
   }
 }
 
 .accent{
   background-color: $darkgray;
-  @media(max-width: $medWidth){
+  @media screen and(max-width: $medWidth){
     display: none;
    }
 }
@@ -204,7 +204,7 @@ section{
   border-radius: 5px;
   margin: 20px auto;
   padding: 10px;
-  @media(min-width: $medWidth){
+  @media screen and(min-width: $medWidth){
     width: $medBox*3;
     // height: $medBox*2;
   }

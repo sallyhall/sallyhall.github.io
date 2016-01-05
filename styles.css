@@ -42,16 +42,16 @@ header {
   float: left; }
   .left a {
     color: black; }
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .left {
       font-size: 2rem;
       padding-top: 1rem; } }
-  @media (max-width: 388px) {
+  @media screen and (max-width: 388px) {
     .left {
       font-size: 1rem; } }
   .left .tiny {
     font-size: .9rem; }
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       .left .tiny {
         display: none; } }
 
@@ -59,15 +59,15 @@ header {
   font-size: 25px;
   margin: 5px;
   line-height: 0; }
-  @media (max-width: 388px) {
+  @media screen and (max-width: 388px) {
     .fa {
       font-size: 16px; } }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .menu {
     width: 450px; } }
 
-@media (min-width: 825px) {
+@media screen and (min-width: 825px) {
   .menu {
     width: 675px; } }
 
@@ -91,11 +91,11 @@ section {
       width: 100%;
       height: 100%;
       overflow: hidden; }
-    @media (min-width: 480px) {
+    @media screen and (min-width: 480px) {
       section li {
         width: 150px;
         height: 150px; } }
-    @media (min-width: 825px) {
+    @media screen and (min-width: 825px) {
       section li {
         width: 225px;
         height: 225px; } }
@@ -105,24 +105,24 @@ section {
       font-weight: 100;
       color: white;
       line-height: 100px; }
-      @media (min-width: 480px) {
+      @media screen and (min-width: 480px) {
         section li a {
           line-height: 150px; } }
-      @media (min-width: 825px) {
+      @media screen and (min-width: 825px) {
         section li a {
           line-height: 225px; } }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .smlWidth {
     display: none; } }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .lrgWidth {
     display: none; } }
 
 .accent {
   background-color: #363537; }
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .accent {
       display: none; } }
 
@@ -172,7 +172,7 @@ section {
   border-radius: 5px;
   margin: 20px auto;
   padding: 10px; }
-  @media (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     .projectItem {
       width: 450px; } }
   @media (min-width: 825px) {
