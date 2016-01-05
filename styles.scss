@@ -181,7 +181,7 @@ section{
   display: block;
   position: relative;
   visibility: hidden;
-  top:-150px;
+  top:-125px;
 }
 
 .subsection{
@@ -198,8 +198,45 @@ section{
   }
 }
 
-.projects{
+
+.projectItem{
+  border: 1px solid $darkgray;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  @media(min-width: $medWidth){
+    width: $medBox*3;
+    // height: $medBox*2;
+  }
+  @media(min-width: $lrgWidth){
+    width: $lrgBox*3;
+    // height: $lrgBox*2;
+  }
+  .links{
+    display: block;
+    margin:10px;
+    text-align: center;
+  }
+  p{
+    @media(max-width: $medWidth){
+      display: none;
+    }
+  }
   img{
-    width: 75%;
+    width: $medBox;
+    @media(min-width: $medWidth){
+      width: $medBox*2;
+      margin: 10px $medBox/2;
+    }
+    @media(min-width: $lrgWidth){
+      width: $lrgBox*2;
+      margin: 10px $lrgBox/2;
+    }
+  }
+}
+
+.resume{
+  h3{
+    padding-left: 25px;
   }
 }
