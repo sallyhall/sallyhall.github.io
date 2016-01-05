@@ -21,7 +21,7 @@ header{
   top:0;
   background-color: white;
   padding: .5rem 0;
-  border-bottom: 1px solid $darkgray;
+  border-bottom: 1px solid black;
   .container{
     width:80%;
     margin: auto;
@@ -45,7 +45,7 @@ header{
 }
 .left{
   a{
-    color:$darkgray;
+    color:black;
   }
   font-size: 4rem;
   vertical-align: top;
@@ -74,16 +74,18 @@ header{
   }
 
 }
-
-section{
-  text-align: center;
-  margin: 100px auto;
+.menu{
   @media(min-width: $medWidth){
     width: 3*$medBox;
   }
   @media(min-width: $lrgWidth){
     width: 3*$lrgBox;
   }
+
+}
+section{
+  text-align: center;
+  margin: 100px auto;
   width: 100%;
   ul{
     padding: 0;
@@ -98,6 +100,32 @@ section{
       height:100%;
       overflow: hidden;
     }
+    background-color:gray;
+    outline: 1px dashed white;
+    outline-offset: -10px;
+    vertical-align: top;
+    @media(min-width: $medWidth){
+      width: $medBox;
+      height: $medBox;
+    }
+    @media(min-width: $lrgWidth){
+      width: $lrgBox;
+      height: $lrgBox;
+    }
+    width: 100%;
+    a{
+      text-decoration: none;
+      font-size: 2em;
+      font-weight: 100;
+      color: white;
+      line-height: 100px;
+      @media(min-width: $medWidth){
+        line-height: $medBox;
+      }
+      @media(min-width: $lrgWidth){
+        line-height: $lrgBox;
+      }
+    }
   }
 }
 
@@ -111,34 +139,7 @@ section{
     display:none;
   }
 }
-section li {
-  background-color:gray;
-  outline: 1px dashed white;
-  outline-offset: -10px;
-  vertical-align: top;
-  @media(min-width: $medWidth){
-    width: $medBox;
-    height: $medBox;
-  }
-  @media(min-width: $lrgWidth){
-    width: $lrgBox;
-    height: $lrgBox;
-  }
-  width: 100%;
-  a{
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 100;
-    color: white;
-    line-height: 100px;
-    @media(min-width: $medWidth){
-      line-height: $medBox;
-    }
-    @media(min-width: $lrgWidth){
-      line-height: $lrgBox;
-    }
-  }
-}
+
 .accent{
   background-color: $darkgray;
   @media(max-width: $medWidth){
@@ -184,6 +185,8 @@ section li {
 }
 
 .subsection{
+  width: 65%;
+  margin:auto;
   font-weight: 300;
   h1{
     margin:50px;
@@ -192,5 +195,11 @@ section li {
   p{
     font-size: 1.25rem;
     text-align: left;
+  }
+}
+
+.projects{
+  img{
+    width: 75%;
   }
 }
