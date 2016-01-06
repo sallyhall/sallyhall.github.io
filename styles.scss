@@ -72,7 +72,6 @@ header{
   @media screen and (max-width: $smlWidth){
     font-size: 16px;
   }
-
 }
 .menu{
   @media screen and(min-width: $medWidth){
@@ -156,25 +155,19 @@ section{
 }
 
 .contact{
+  margin-top:100px;
   margin-bottom: 20px;
-  text-align: left;
+  margin-left:25%;
   a{
     text-decoration: none;
     color:$darkgray;
     font-size: 1.5em;
+    display: block;
     &:hover{
       text-decoration: underline;
     }
     margin: 20px;
   }
-  .intro{
-    margin: 50px auto;
-    padding: 50px;
-  }
-  h1{
-    font-size: 2em;
-  }
-
 }
 
 .anchor{
@@ -185,8 +178,21 @@ section{
 }
 
 .subsection{
+  &:hover{
+    background-color: $lightBlue;
+  }
+  outline: 2px dashed $darkgray;
+  outline-offset: -15px;
+  background-color: lightgray;
+  padding:20px 100px;
+  @media screen and(min-width: $medWidth){
+    min-height: 2.7*$medBox;
+  }
+  @media screen and(min-width: $lrgWidth){
+    min-height: 2.7*$lrgBox;
+  }
   width: 65%;
-  margin:auto;
+  margin:40px auto;
   font-weight: 300;
   h1{
     margin:50px;
@@ -195,15 +201,20 @@ section{
   p{
     font-size: 1.25rem;
     text-align: left;
+    width:50%;
+    @media (max-width: $medWidth){
+      width: 100%;
+    }
   }
 }
 
 
 .projectItem{
-  border: 1px solid $darkgray;
-  border-radius: 5px;
+  outline: 2px dashed $darkgray;
+  outline-offset: -15px;
+  background-color: lightgray;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
   @media screen and(min-width: $medWidth){
     width: $medBox*3;
     // height: $medBox*2;
@@ -216,27 +227,91 @@ section{
     display: block;
     margin:10px;
     text-align: center;
+    a{
+      &:visited{
+        color:$darkgray;
+      }
+    }
   }
   p{
+    width: 100%;
     @media(max-width: $medWidth){
       display: none;
     }
   }
   img{
     width: $medBox;
+    height: auto;
+    overflow:hidden;
+    // border-radius: $medBox;
+    outline: 2px dashed white;
+    outline-offset: -15px;
     @media(min-width: $medWidth){
       width: $medBox*2;
       margin: 10px $medBox/2;
+      height:auto;
+      // border-radius: $medBox*2;
     }
     @media(min-width: $lrgWidth){
       width: $lrgBox*2;
       margin: 10px $lrgBox/2;
+      height:auto;
+      // border-radius: $lrgBox*2;
     }
   }
 }
 
 .resume{
-  h3{
-    padding-left: 25px;
+  li{
+    font-size: 1.25em;
   }
+  h2{
+    font-size: 2em;
+    width:100%;
+    border-bottom: 2px dashed $darkgray;
+    margin-left:-50px;
+    margin-top:50px;
+  }
+  h3{
+    margin-left: -15px;
+  }
+}
+.navlink{
+  &:hover{
+    background-color: $lightBlue;
+    a{
+      color: $darkgray;
+    }
+  }
+}
+.headshot{
+  width:$lrgBox;
+  height:$lrgBox;
+  border-radius:$lrgBox;
+  border: 2px dashed $darkgray;
+  float: right;
+  @media (max-width: $medWidth){
+    display: none;
+  }
+}
+
+#resumeLink{
+  text-decoration: underline;
+  float:right;
+  &:visited{
+    color:$darkgray;
+  }
+  &:hover{
+    font-weight: bold;
+  }
+
+}
+
+.skillList{
+  li{
+    float:left;
+    width:25%;
+    line-height: 1.5em;
+  }
+  padding-bottom:50px;
 }
