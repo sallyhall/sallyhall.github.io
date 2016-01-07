@@ -112,19 +112,20 @@ section{
       height: $lrgBox;
     }
     width: 100%;
-    a{
-      text-decoration: none;
-      font-size: 2em;
-      font-weight: 100;
-      color: white;
-      line-height: 100px;
-      @media screen and(min-width: $medWidth){
-        line-height: $medBox;
-      }
-      @media screen and(min-width: $lrgWidth){
-        line-height: $lrgBox;
-      }
+  }
+  a{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    line-height: 100px;
+    @media screen and(min-width: $medWidth){
+      line-height: $medBox;
     }
+    @media screen and(min-width: $lrgWidth){
+      line-height: $lrgBox;
+    }
+
   }
 }
 
@@ -214,49 +215,56 @@ section{
   outline-offset: -15px;
   background-color: lightgray;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
   @media screen and(min-width: $medWidth){
-    width: $medBox*3;
-    // height: $medBox*2;
+    width: $medBox*4;
   }
   @media(min-width: $lrgWidth){
-    width: $lrgBox*3;
-    // height: $lrgBox*2;
+    width: $lrgBox*4;
   }
   .links{
     display: block;
     margin:10px;
-    text-align: center;
+    text-align: right;
     a{
       &:visited{
         color:$darkgray;
       }
     }
   }
-  p{
-    width: 100%;
+  .description{
+    display: inline-block;
+    width: $medBox*.9;
+    @media(min-width: $medWidth){
+      width: $medBox*2*.9;
+    }
+    @media(min-width: $lrgWidth){
+      width: $lrgBox*2*.9;
+    }
     @media(max-width: $medWidth){
       display: none;
     }
+    p{
+      width: 100%;
+    }
+  }
+  .name{
+    font-size:2em;
   }
   img{
-    width: $medBox;
-    height: auto;
     overflow:hidden;
-    // border-radius: $medBox;
-    outline: 2px dashed white;
-    outline-offset: -15px;
+    text-align: right;
+    display: inline-block;
+    width: $medBox;
+    outline: 4px solid $lightBlue;
+    outline-offset: -2px;
     @media(min-width: $medWidth){
       width: $medBox*2;
-      margin: 10px $medBox/2;
-      height:auto;
-      // border-radius: $medBox*2;
+      margin: 10px;
     }
     @media(min-width: $lrgWidth){
       width: $lrgBox*2;
-      margin: 10px $lrgBox/2;
-      height:auto;
-      // border-radius: $lrgBox*2;
+      margin:10px;
     }
   }
 }
@@ -273,15 +281,13 @@ section{
     margin-top:50px;
   }
   h3{
-    margin-left: -15px;
+    display: inline-block;
   }
 }
 .navlink{
   &:hover{
     background-color: $lightBlue;
-    a{
-      color: $darkgray;
-    }
+    color: $darkgray;
   }
 }
 .headshot{
@@ -314,4 +320,8 @@ section{
     line-height: 1.5em;
   }
   padding-bottom:50px;
+}
+
+.hidden{
+  display:none;
 }

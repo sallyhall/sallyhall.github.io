@@ -99,18 +99,18 @@ section {
       section li {
         width: 225px;
         height: 225px; } }
-    section li a {
-      text-decoration: none;
-      font-size: 2em;
-      font-weight: 100;
-      color: white;
-      line-height: 100px; }
-      @media screen and (min-width: 650px) {
-        section li a {
-          line-height: 150px; } }
-      @media screen and (min-width: 825px) {
-        section li a {
-          line-height: 225px; } }
+  section a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    line-height: 100px; }
+    @media screen and (min-width: 650px) {
+      section a {
+        line-height: 150px; } }
+    @media screen and (min-width: 825px) {
+      section a {
+        line-height: 225px; } }
 
 @media screen and (min-width: 900px) {
   .smlWidth {
@@ -185,40 +185,50 @@ section {
   outline-offset: -15px;
   background-color: lightgray;
   margin: 20px auto;
-  padding: 20px; }
+  padding: 30px; }
   @media screen and (min-width: 650px) {
     .projectItem {
-      width: 450px; } }
+      width: 600px; } }
   @media (min-width: 825px) {
     .projectItem {
-      width: 675px; } }
+      width: 900px; } }
   .projectItem .links {
     display: block;
     margin: 10px;
-    text-align: center; }
+    text-align: right; }
     .projectItem .links a:visited {
       color: #363537; }
-  .projectItem p {
-    width: 100%; }
+  .projectItem .description {
+    display: inline-block;
+    width: 135px; }
+    @media (min-width: 650px) {
+      .projectItem .description {
+        width: 270px; } }
+    @media (min-width: 825px) {
+      .projectItem .description {
+        width: 405px; } }
     @media (max-width: 650px) {
-      .projectItem p {
+      .projectItem .description {
         display: none; } }
+    .projectItem .description p {
+      width: 100%; }
+  .projectItem .name {
+    font-size: 2em; }
   .projectItem img {
-    width: 150px;
-    height: auto;
     overflow: hidden;
-    outline: 2px dashed white;
-    outline-offset: -15px; }
+    text-align: right;
+    display: inline-block;
+    width: 150px;
+    outline: 4px solid #96C4C5;
+    outline-offset: -2px; }
     @media (min-width: 650px) {
       .projectItem img {
         width: 300px;
-        margin: 10px 75px;
-        height: auto; } }
+        margin: 10px; } }
     @media (min-width: 825px) {
       .projectItem img {
         width: 450px;
-        margin: 10px 112.5px;
-        height: auto; } }
+        margin: 10px; } }
 
 .resume li {
   font-size: 1.25em; }
@@ -231,12 +241,11 @@ section {
   margin-top: 50px; }
 
 .resume h3 {
-  margin-left: -15px; }
+  display: inline-block; }
 
 .navlink:hover {
-  background-color: #96C4C5; }
-  .navlink:hover a {
-    color: #363537; }
+  background-color: #96C4C5;
+  color: #363537; }
 
 .headshot {
   width: 337.5px;
@@ -262,3 +271,6 @@ section {
     float: left;
     width: 25%;
     line-height: 1.5em; }
+
+.hidden {
+  display: none; }
