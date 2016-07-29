@@ -4,7 +4,7 @@ var projects = [
     projectName:"Choose your own Adventure",
     description:"A Minecraft-themed Choose Your Own Adventure Game",
     image:"images/chooseYourOwnAdventure.png",
-    projectURL:"http://sallykingston.github.io/Choose_your_own_adventure",
+    projectURL:"http://sallyhall.github.io/Choose_your_own_adventure",
     display:false,
   },
   {
@@ -12,7 +12,7 @@ var projects = [
     projectName:"Powell Peralta",
     description:"Created from a pdf.",
     image:"images/PowellPeralta.png",
-    projectURL:"http://sallykingston.github.io/Powell_Peralta",
+    projectURL:"http://sallyhall.github.io/Powell_Peralta",
     display:true,
   },
   {
@@ -20,7 +20,7 @@ var projects = [
     projectName:"Surf & Paddle",
     description:"Recreation of a pdf.",
     image:"images/surfAndPaddle.png",
-    projectURL:"http://sallykingston.github.io/Surf_and_Paddle",
+    projectURL:"http://sallyhall.github.io/Surf_and_Paddle",
     display:true,
   },
   {
@@ -28,7 +28,7 @@ var projects = [
     projectName:"Todo List",
     description:"Todo list - made to practice CRUD.",
     image:"images/todos.png",
-    projectURL:"http://sallykingston.github.io/crud-todo",
+    projectURL:"http://sallyhall.github.io/crud-todo",
     display:true,
   },
   {
@@ -36,7 +36,7 @@ var projects = [
     projectName:"Github Recreation",
     description:"Recreating my github profile.",
     image:"images/gitHub.png",
-    projectURL:"http://sallykingston.github.io/github-recreation",
+    projectURL:"http://sallyhall.github.io/github-recreation",
     display:true,
   },
   {
@@ -44,7 +44,7 @@ var projects = [
     projectName:"Go Fish",
     description:"Go fish game made using constructors.",
     image:"images/goFish.png",
-    projectURL:"http://sallykingston.github.io/go-fish",
+    projectURL:"http://sallyhall.github.io/go-fish",
     display:true,
   },
   {
@@ -52,7 +52,7 @@ var projects = [
     projectName:"Octodex",
     description:"Recreation of a portion of the Octodex",
     image:"images/octodex.png",
-    projectURL:"http://sallykingston.github.io/html-intro-layout",
+    projectURL:"http://sallyhall.github.io/html-intro-layout",
     display:false,
   },
   {
@@ -60,7 +60,7 @@ var projects = [
     projectName:"Photo Album",
     description:"Photo album made using jQuery.",
     image:"images/photoalbum.png",
-    projectURL:"http://sallykingston.github.io/jQuery-photo-albums",
+    projectURL:"http://sallyhall.github.io/jQuery-photo-albums",
     display:false,
   },
   {
@@ -68,7 +68,7 @@ var projects = [
     projectName:"Juan on One",
     description:"Group chat project - using Ajax.",
     image:"images/chat.png",
-    projectURL:"http://sallykingston.github.io/lovelace",
+    projectURL:"http://sallyhall.github.io/lovelace",
     display:true,
   },
   {
@@ -76,7 +76,7 @@ var projects = [
     projectName:"Calculator in the DOM",
     description:"Bonus project to make calculator in the DOM.",
     image:"images/calculator.png",
-    projectURL:"http://sallykingston.github.io/theDOM",
+    projectURL:"http://sallyhall.github.io/theDOM",
     display:false,
   },
   {
