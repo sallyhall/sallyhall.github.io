@@ -6,6 +6,7 @@ body, html{
   height: 100%;
   font-family: 'Roboto', sans-serif;
   color:$darkgray;
+  background-color: $lightgray;
 }
 a{
   text-decoration: none;
@@ -35,6 +36,14 @@ header{
     display: inline-block;
     a{
       color:$darkgray;
+    }
+  }
+  .navlink{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:$darkgray;
+    &:hover{
+      font-weight: bold;
     }
   }
 }
@@ -73,15 +82,7 @@ header{
     font-size: 16px;
   }
 }
-.menu{
-  @media only screen and(min-width: $medWidth){
-    width: 3*$medBox;
-  }
-  @media only screen and(min-width: $lrgWidth){
-    width: 3*$lrgBox;
-  }
 
-}
 section{
   text-align: center;
   margin: 100px auto;
@@ -100,7 +101,6 @@ section{
       overflow: hidden;
     }
     background-color:gray;
-    outline: 1px dashed white;
     outline-offset: -10px;
     vertical-align: top;
     @media only screen and(min-width: $medWidth){
@@ -140,12 +140,6 @@ section{
   }
 }
 
-.accent{
-  background-color: $darkgray;
-  @media only screen and(max-width: $medWidth){
-    display: none;
-   }
-}
 .container{
   z-index:1;
 }
@@ -187,10 +181,10 @@ section{
 }
 
 .subsection{
-  &:hover{
-    background-color: $lightBlue;
+  &:first-child{
+    margin-top: 110px;
   }
-  outline: 2px dashed $darkgray;
+  outline: 1px solid $darkgray;
   outline-offset: -15px;
   background-color: lightgray;
   padding:20px 100px;
@@ -226,17 +220,10 @@ section{
 
 
 .projectItem{
-  outline: 2px dashed $darkgray;
-  outline-offset: -15px;
+  border-bottom: 1px solid $darkgray;
   background-color: lightgray;
   margin: 20px auto;
   padding: 30px;
-  @media only screen and(min-width: $medWidth){
-    width: $medBox*3;
-  }
-  @media(min-width: $lrgWidth){
-    width: $lrgBox*3;
-  }
   .links{
     display: block;
     margin:10px;
@@ -250,13 +237,6 @@ section{
   .description{
     display: inline-block;
     width:45%;
-    // width: $medBox*.9;
-    // @media(min-width: $medWidth){
-    //   width: $medBox*2*.9;
-    // }
-    // @media(min-width: $lrgWidth){
-    //   width: $lrgBox*2*.9;
-    // }
     @media(max-width: $medWidth){
       p,.tech{
         display: none;
@@ -294,7 +274,7 @@ section{
   h2{
     font-size: 2em;
     width:100%;
-    border-bottom: 2px dashed $darkgray;
+    border-bottom: 1px solid $darkgray;
     margin-left:-15px;
     @media only screen and(max-width: $headerMax){
       margin-left:0;
@@ -305,17 +285,10 @@ section{
     display: inline-block;
   }
 }
-.navlink{
-  &:hover{
-    background-color: $lightBlue;
-    color: $darkgray;
-  }
-}
+
 .headshot{
   width:$lrgBox*1.5;
   height:$lrgBox*1.5;
-  outline: 2px dashed white;
-  outline-offset: -10px;
   float: right;
   @media (max-width: $medWidth){
     display: none;
@@ -349,3 +322,4 @@ section{
 .hidden{
   display:none;
 }
+
