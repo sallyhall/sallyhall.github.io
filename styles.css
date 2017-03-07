@@ -30,6 +30,9 @@ header {
     margin: 10px;
     list-style-type: none;
     display: inline-block; }
+    @media only screen and (max-width: 500px) {
+      header li {
+        margin: 5px; } }
     header li a {
       color: #363537; }
   header .navlink {
@@ -58,9 +61,12 @@ header {
       font-size: 1rem; } }
   .left .tiny {
     font-size: .9rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1150px) {
       .left .tiny {
         display: none; } }
+  @media only screen and (max-width: 500px) {
+    .left {
+      display: none; } }
 
 .fa {
   font-size: 25px;
@@ -70,52 +76,16 @@ header {
     .fa {
       font-size: 16px; } }
 
-section {
-  text-align: center;
-  margin: 100px auto;
-  width: 100%; }
-  section ul {
-    padding: 0;
-    margin: 0; }
-  section li {
-    padding: 0;
-    list-style-type: none;
-    display: inline-block;
-    background-color: gray;
-    outline-offset: -10px;
-    vertical-align: top;
-    width: 100%; }
-    section li img {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
-    @media only screen and (min-width: 725px) {
-      section li {
-        width: 150px;
-        height: 150px; } }
-    @media only screen and (min-width: 875px) {
-      section li {
-        width: 225px;
-        height: 225px; } }
-  section a {
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 100;
-    color: white;
-    line-height: 100px; }
-    @media only screen and (min-width: 725px) {
-      section a {
-        line-height: 150px; } }
-    @media only screen and (min-width: 875px) {
-      section a {
-        line-height: 225px; } }
-
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1150px) {
   .smlWidth {
     display: none; } }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1150px) {
   .lrgWidth {
+    display: none; } }
+
+@media only screen and (max-width: 900px) {
+  .optional {
     display: none; } }
 
 .container {
@@ -130,7 +100,7 @@ section {
   margin-top: 100px;
   margin-bottom: 20px;
   margin-left: 25%; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1150px) {
     .contact {
       margin-left: 5px; } }
   .contact a {
@@ -141,7 +111,7 @@ section {
     margin: 20px; }
     .contact a:hover {
       text-decoration: underline; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1150px) {
       .contact a {
         display: inline;
         text-align: center;
@@ -224,7 +194,7 @@ section {
   border-bottom: 1px solid #363537;
   margin-left: -15px;
   margin-top: 50px; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1150px) {
     .resume h2 {
       margin-left: 0; } }
 .resume h3 {
@@ -252,7 +222,7 @@ section {
     float: left;
     width: 33%;
     line-height: 1.5em; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1150px) {
       .skillList li {
         width: 50%; } }
 
